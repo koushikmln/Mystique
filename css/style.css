@@ -1,0 +1,122 @@
+
+@font-face {
+    font-family: 'adventure';
+    font-weight: 100;
+    src:url('../fonts/Adventure.otf');
+}
+
+body{
+	padding-bottom: 40px;
+	min-width: 960px;
+}
+
+#title{
+	font-family: 'adventure';
+	font-size: 100px;
+	color:#C51F1F;
+}
+.remain{
+	padding-top: 15px;
+	height: 170px;
+}
+.timer{
+	display: inline-block;
+	width: 22%;
+	font-size: 30px;
+	color: rgb(115, 121, 116);
+	text-shadow: 2px 2px 2px rgba(0,0,0, 0.75);
+}
+.vbar{
+	background: rgb(218,135,41);
+	width: 5px;
+	height: 130px;
+	display: inline-block;
+	border-radius: 2px;
+	
+}
+.timer span{
+	display: block;
+	font-size: 120px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	margin: -40px 0;
+}
+.wrap-box{
+	background-color: #eee;
+	padding-bottom: 10px;
+	border-radius: 5px;
+}
+.wrap-box h2{ 
+	color: #fff;
+	border-radius: 5px 5px 0 0;
+	background-color: #428bca;
+	padding: 15px;
+}
+.gameanswer{
+	width:300px;
+	display: inline;
+}
+.navbar{
+	background: #173549;
+	height: 40px;
+	border-bottom: 5px solid rgb(218,135,41);
+}
+.nav > li > a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+.nav > li > a:hover{
+	background: rgb(218,135,41);
+	color: #fff;
+	text-decoration: none;
+}
+.nav > li > a:focus{
+	background: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+.active > a{
+	background: rgb(218,135,41);
+}
+.sidebar{
+	margin-top: -20px;
+	float: left;
+	width: 300px;
+}
+.sidebar h2{
+	margin-top : -20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	background: rgb(218,135,41);
+}
+
+#footer
+{
+	bottom: 0;
+	position: fixed;
+	background: #2f2f2f;
+	padding: 5px;
+	color:#999999;
+	text-align:center;
+	margin-top: 20px;
+	width: 100%;
+}
+.ribbonleft{
+	width: 0; 
+	height: 0; 
+	border-bottom: 60px solid transparent;
+	border-left: 150px solid #eee;
+}
+.ribbonright{
+	float: right;
+	right: 0;
+	width: 0; 
+	height: 0; 
+	border-bottom: 60px solid transparent;
+	border-right: 150px solid #eee;
+}
+#postcontainer img{
+    max-width: 95%;
+}
