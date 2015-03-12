@@ -1,9 +1,0 @@
-[2014-02-11 20:02:18]
-DB Connection failed:\nSQLSTATE[HY000] [2013] Lost connection to MySQL server at 'sending authentication information', system error: 32
-======================================================================
-[2014-03-28 14:34:34]
-DB Connection failed:\nSQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (11)
-======================================================================
-[2015-03-10 19:20:44]
-DB Connection failed:\nSQLSTATE[28000] [1045] Access denied for user 'siddhart_mstq14'@'localhost' (using password: YES)
-======================================================================
