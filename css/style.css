@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'adventure';
+	font-weight: 100;
+	src:url('../fonts/Adventure.otf');
+}
+
+body{
+	padding-bottom: 40px;
+	min-width: 960px;
+	background-image: url("../images/type.png");
+}
+
+#title{
+	font-family: 'adventure';
+	font-size: 100px;
+	color:#C51F1F;
+}
+
+#footer
+{
+	bottom: 0;
+	position: fixed;
+	background: #2f2f2f;
+	padding: 5px;
+	color:#999999;
+	text-align:center;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.numbers {
+	text-align: center; 
+	font-family: 'Arial', sans-serif;
+	font-size:100px;
+	color: #A3A3A3;       
+}
+
+.title {        
+	text-align: center; 
+	font-family: Arial; 
+	font-size: 20px;
+	color: #d64832;
+}
+
+#table {
+	margin-left:auto; 
+	margin-right:auto;
+	height: 48px;
+	border-style: none;
+	background-color: transparent;
+	z-index:100;   
+}
+
+#table td{
+	padding:15px;
+}
+
+#sexyregistration{
+	color: #FFFFFF;
+	font-size: 18pt;
+	border-color: #3A3A3A;
+	border-width: 3px;
+	border-radius: 7px 7px 7px 7px;
+	background-color: transparent;
+	margin-right: 20px;
+}
+
+#sexylogin{
+	color: #FFFFFF;
+	font-size: 18pt;
+	border-color: #3A3A3A;
+	border-width: 3px;
+	border-radius: 7px 7px 7px 7px;
+	background-color: transparent;
+}
