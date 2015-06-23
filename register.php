@@ -1,5 +1,6 @@
 <?php
 include "config.php";
+include "lib/password.php";
 $name = $_POST['name'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 $nick = $_POST['nick'];
@@ -27,13 +28,25 @@ if($result_nick){
 	$result = $stmt->execute();
 	$to = $email;
 	$subject = "Mystique Registration";
-	$stmt->fetch();
 	$stmt->bind_result($result_id);
-	$id = 10000+$result_id;
-	$txt = "Hello ".$name."<br> Your Registration for Mystique has been successfully Completed.<br>Your Registration ID is MYS15".$id.
-	"<br>May the Force Be With You.<br>Regards,<br>Webmaster";
-	$headers = "From: mystique@bitotsav.in";
-	mail($to,$subject,$txt,$headers);
+	$stmt->fetch();
+	$id = $result_id + 10000;
+	$txt = '<html><body>';
+	$txt .= "Hello <b>".$name."</b>.";
+	$txt .= "<p> Your Registration for Mystique 4.0 has been successfully completed.";
+	$txt .= "<p> Your Registration ID is MYS15".$id;
+	$txt .= "<p>May the Force Be With You.";
+	$txt .= "<p>Regards,<br>Webmaster";
+	$txt .= "</body></html>";
+	$headers  = 'MIME-Version: 1.0' . "\r\n";
+	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+	$headers .= "From: mystique@bitotsav.in";
+	if(mail($to, $subject, $txt, $headers)){
+		echo 'Your mail has been sent successfully.';
+	} else{
+		echo 'Unable to send email. Please try again.';
+	}
+
 	//Closing Connection
 	$con = null;
 }

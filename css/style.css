@@ -7,7 +7,19 @@
 body{
 	padding-bottom: 40px;
 	min-width: 960px;
-	background-image: url("../images/type.png");
+	background: url("../images/background.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+body::before {
+	content: "";
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: fixed;
+	z-index: -1;   
 }
 
 #title{
@@ -16,8 +28,7 @@ body{
 	color:#C51F1F;
 }
 
-#footer
-{
+#footer{
 	bottom: 0;
 	position: fixed;
 	background: #2f2f2f;
@@ -29,17 +40,18 @@ body{
 }
 
 .numbers {
+	font-family: 'adventure';
 	text-align: center; 
-	font-family: 'Arial', sans-serif;
 	font-size:100px;
-	color: #A3A3A3;       
+	color: #FFFFFF;       
 }
 
 .title {        
 	text-align: center; 
 	font-family: Arial; 
-	font-size: 20px;
-	color: #d64832;
+	font-size: 30px;
+	font-weight: 600;
+	color: #C51F1F;
 }
 
 #table {
@@ -55,21 +67,46 @@ body{
 	padding:15px;
 }
 
-#sexyregistration{
+#sexyregistration, #sexylogin, #sexycontinue, #sexylogout{
 	color: #FFFFFF;
 	font-size: 18pt;
-	border-color: #3A3A3A;
+	border-color: #CFCFCF;
 	border-width: 3px;
 	border-radius: 7px 7px 7px 7px;
 	background-color: transparent;
 	margin-right: 20px;
 }
 
-#sexylogin{
+#sexyrules, #sexylogout2, #sexyleader, #sexyprizes, #sexyadmin, #sexyforum{
 	color: #FFFFFF;
 	font-size: 18pt;
-	border-color: #3A3A3A;
+	border-color: #CFCFCF;
 	border-width: 3px;
 	border-radius: 7px 7px 7px 7px;
 	background-color: transparent;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+#userData th{
+	text-align: center;
+	font-size: 14pt;
+	color: #C51F1F;
+	background-color: rgba(0,0,0,0.7);
+}
+
+#userData td{
+	text-align: center;
+	font-weight: bold;
+	font-size: 13pt;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#leader{
+	color: #FFFFFF;
+}
+#flash{
+	height:250px;
+	overflow-y:scroll;
 }

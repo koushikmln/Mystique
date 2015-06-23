@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Admin Backdoor</title>
+</head>
+<body>
+	<center>
+		<form id="admin_hack">
+			<input type="text" id="nick" name="nick" placeholder="Enter Nick">
+			<input type="password" id="password" name="password" placeholder="Enter Password">
+			<input id="submit" type="submit" name="submit">
+		</form>
+	</center>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script>
+	$(window).ready(function(){
+		$( "#admin_hack" ).submit(function( event ) {
+			event.preventDefault();
+			data = $("#admin_hack").serialize();
+			$.ajax({
+				type: "POST",
+				url: "./adminlogin.php",
+				data: data,
+			}).done(function(msg) {
+				if(msg.localeCompare("TRUE") == 0){
+					window.location =  "./game.php";
+				}
+			});
+		});
+	});
+	</script>
+</body>
+</html>

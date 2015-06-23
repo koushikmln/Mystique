@@ -3,7 +3,7 @@ var year=2015;
 var month=3;        
 var day=15;         
 var hour=19;       
-var minute=00;   
+var minute=10;   
 var tz=+5.5;        
 
 //-->    DO NOT CHANGE THE CODE BELOW!    <--
